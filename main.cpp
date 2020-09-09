@@ -25,6 +25,11 @@ int main()
         list.push_back(item);
     }
   }while( input != 'q' && input != 'Q' );
-    
+  if( list.size() > 0 ) {
+    for (int i=0; i<int(list.size()); i++){
+       cout << "\n" << i+1 << ": " << myvector.at(i);
+    }
+  } else { cout<<"\nthere are no items on the list"; }
+  
   return 0;
 }
